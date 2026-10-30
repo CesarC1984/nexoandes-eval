@@ -14,3 +14,6 @@ Despliegue para NexoAndes de su plataforma en linea mediante Terraform y Github
 - Git
 - AWS CLI
 
+## Alumno
+- Cesar Cespedes
+
