@@ -42,3 +42,35 @@ variable "instance_type" {
   type        = string
   default     = "t2.micro"
 }
+
+
+##variables para el script user_data_v1.sh.tpl
+variable "student_name" {
+  description = "Nombre del alumno evaluado."
+  type        = string
+  default     = "Cesar Cespedes"
+}
+
+variable "student_number" {
+  description = "Número o ID del estudiante."
+  type        = string
+  default     = "2"
+}
+
+variable "environment" {
+  description = "Entorno de ejecución (prod)."
+  type        = string
+  default     = "prod"
+}
+
+variable "portal_version" {
+  description = "Portal NexoAndes"
+  type        = string
+  default     = "v1.0.0"
+}
+
+variable "project_name" {
+  description = "Nombre del proyecto."
+  type        = string
+  default     = "NexoAndes"
+}
