@@ -11,7 +11,7 @@ variable "aws_region" {
 variable "name_prefix" {
   description = "Prefijo utilizado para identificar los recursos del laboratorio."
   type        = string
-  default     = "lab-red-aula"
+  default     = "nexoandes-eval"
 }
 
 variable "vpc_cidr" {
@@ -41,4 +41,33 @@ variable "instance_type" {
   description = "Tipo de instancia EC2 utilizado por el laboratorio."
   type        = string
   default     = "t2.micro"
+}
+
+
+#variables con datos de alumno para Terraform
+variable "student_name" {
+  description = "Nombre del estudiante"
+  type        = string
+}
+
+variable "student_number" {
+  description = "Número del estudiante"
+  type        = string
+}
+
+variable "environment" {
+  description = "Entorno de despliegue"
+  type        = string
+  default     = "development"
+}
+
+variable "portal_version" {
+  description = "Versión del portal"
+  type        = string
+  default     = "1.0"
+}
+
+variable "project_name" {
+  description = "Nombre del proyecto"
+  type        = string
 }
