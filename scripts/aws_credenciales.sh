@@ -1,4 +1,6 @@
 #!/bin/bash
+##Este script debe ejecutarse con source, de lo contrario no funcionara
+
 read -rsp "AWS_ACCESS_KEY_ID: " AWS_ACCESS_KEY_ID
 echo
 export AWS_ACCESS_KEY_ID
